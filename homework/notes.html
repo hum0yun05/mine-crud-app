@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework-33</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-3 mt-3">
+            <div class="card">
+                <div class="card-body">
+                    <input type="text" class="form-control" placeholder="Username" id="name">
+                    <input type="text" class="form-control mt-3" placeholder="Surname" id="surname">
+                    <input type="date" class="form-control mt-3" id="date">
+                    <select id="tur" class="form-control mt-3">
+                        <option>Kontrakt</option>
+                        <option>Grant</option>
+                    </select>
+                    <button type="button" class="btn btn-success ml-auto d-block mt-3" onclick="addInfo()">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-9">
+            <div class="card mt-3">
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Ism Familiya</th>
+                            <th>Tug'ilgan sana</th>
+                            <th>O'qish turi</th>
+                            <th>Amal</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody id="result"></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-3.3.1.slim.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="log.js"></script>
+</body>
+</html>
